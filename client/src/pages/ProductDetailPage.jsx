@@ -41,7 +41,7 @@ const ProductDetailPage = () => {
                     <div key={review._id} className="review">
                         <p><strong>{review.reviewer_name}</strong> ({new Date(review.review_date).toDateString()}):</p>
                         <p>Rating: {review.rating} / 5</p>
-                        <p>{review.review}</p>
+                       <p className="reviewText">{review.review}</p>
                     </div>
                 ))
             ) : (
