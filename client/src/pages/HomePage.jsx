@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProductTile from './ProductsTile'; // Assuming you have this component to display individual products
 import SearchBar from '../components/SearchBar';
 import '../css/HomePage.css'
+import ChatbotWidget from '../components/ChatbotWidget';
 
 
 const HomePage = () => {
@@ -29,6 +30,7 @@ const HomePage = () => {
                     <ProductTile key={product._id} product={product} />
                 ))}
             </div>
+            <ChatbotWidget />
         </div>
     );
 };

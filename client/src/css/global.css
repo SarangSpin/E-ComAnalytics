@@ -1,0 +1,113 @@
+/* General styles for the entire application */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Chatbot widget styles */
+.rcw-conversation-container {
+    background-color: #ffffff; /* Widget background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.rcw-header {
+    background-color: #333; /* Header background color */
+    color: #ffffff; /* Header text color */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rcw-title {
+    font-size: 16px; /* Title font size */
+    font-weight: bold; /* Title font weight */
+}
+
+.rcw-subtitle {
+    font-size: 12px; /* Subtitle font size */
+    font-weight: normal; /* Subtitle font weight */
+    color: #ddd; /* Subtitle color */
+}
+
+.rcw-launcher {
+    background-color: #333; /* Launcher button background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    bottom: 24px; /* Position from the bottom */
+    right: 24px; /* Position from the right */
+}
+
+.rcw-launcher-icon {
+    fill: #ffffff; /* Launcher icon color */
+}
+
+.rcw-message {
+    background-color: #f5f5f5; /* Message background color */
+    color: #333; /* Message text color */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.rcw-message-client .rcw-message-text {
+    background-color: #333; /* User message background color */
+    color: #ffffff; /* User message text color */
+}
+
+.rcw-message-admin .rcw-message-text {
+    background-color: #007bff; /* Chatbot message background color */
+    color: #ffffff; /* Chatbot message text color */
+}
+
+.rcw-sender {
+    padding: 10px; /* Padding around the input */
+    border-top: 1px solid #e6e6e6; /* Top border */
+}
+
+.rcw-new-message {
+    border-radius: 20px; /* Rounded input field */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ddd; /* Input border */
+}
+
+.rcw-send {
+    background-color: #007bff; /* Send button background */
+    color: #ffffff; /* Send button color */
+    border-radius: 50%; /* Rounded send button */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer;
+}
+
+.rcw-send:hover {
+    background-color: #0056b3; /* Hover state for send button */
+}
+
+/* Adjust the widget for smaller screens */
+@media (max-width: 768px) {
+    .rcw-conversation-container {
+        width: 90%;
+        height: 70%;
+    }
+
+    .rcw-launcher {
+        bottom: 16px;
+        right: 16px;
+    }
+}
