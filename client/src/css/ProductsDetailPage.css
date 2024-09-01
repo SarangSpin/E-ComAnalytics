@@ -1,0 +1,59 @@
+/* ProductDetailPage.css */
+
+.product-detail-page {
+    padding: 20px;
+    margin-top: 80px; /* To avoid overlap with the fixed navbar */
+}
+
+.product-detail-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-detail-page img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-detail-page p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product-detail-page .reviews,
+.product-detail-page .similar-products {
+    margin-top: 40px;
+}
+
+.product-detail-page .reviews .review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-detail-page .reviews .review strong {
+    font-size: 1em;
+    color: #333;
+}
+
+.product-detail-page .reviews .review p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.product-detail-page .similar-products h2 {
+    text-align: center;
+}
+
+.product-detail-page .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}

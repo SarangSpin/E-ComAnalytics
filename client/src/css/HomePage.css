@@ -1,0 +1,14 @@
+/* HomePage.css */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px; /* To avoid overlap with the fixed navbar */
+    font-size: 2em;
+}

@@ -1,0 +1,31 @@
+/* ProductTile.css */
+
+.product-tile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-tile:hover {
+    transform: scale(1.05);
+}
+
+.product-tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-tile h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-tile p {
+    color: #666;
+    font-size: 0.9em;
+}
