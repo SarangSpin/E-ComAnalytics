@@ -22,7 +22,7 @@ const HomePage = () => {
     };
 
     return (
-        <div>
+        <div className="homepage-container">
             <SearchBar onSearchResults={handleSearchResults} />
             <h1>Featured Products</h1>
             <div className="product-grid">

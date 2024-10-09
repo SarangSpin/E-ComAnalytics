@@ -1,6 +1,6 @@
 /* Navbar.css */
 
-nav {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,28 +12,73 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
 
-nav a {
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-logo {
     color: white;
-    margin-right: 20px;
-    text-decoration: none;
+    font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
+.navbar-logo:hover {
     color: #ddd;
 }
 
-nav button {
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ddd;
+}
+
+.navbar-button {
     background-color: #555;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-nav button:hover {
+.navbar-button:hover {
     background-color: #777;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-link, .navbar-button {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
 }

@@ -84,4 +84,4 @@ def search_product_and_analyze_sentiment(product_name):
         driver.quit()
 
 # Example usage
-search_product_and_analyze_sentiment('samsung')  # Replace with the product name you want to search for
+search_product_and_analyze_sentiment('nikon')  # Replace with the product name you want to search for
