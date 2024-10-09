@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProductTile from './ProductsTile'; // Assuming you have this component to display individual products
 import SearchBar from '../components/SearchBar';
 import '../css/HomePage.css'
+import ChatbotWidget from '../components/ChatbotWidget';
 
 
 const HomePage = () => {
@@ -21,7 +22,7 @@ const HomePage = () => {
     };
 
     return (
-        <div>
+        <div className="homepage-container">
             <SearchBar onSearchResults={handleSearchResults} />
             <h1>Featured Products</h1>
             <div className="product-grid">
@@ -29,6 +30,7 @@ const HomePage = () => {
                     <ProductTile key={product._id} product={product} />
                 ))}
             </div>
+            <ChatbotWidget />
         </div>
     );
 };
