@@ -51,12 +51,12 @@ def search_product_and_analyze_sentiment(product_name):
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(2)
             WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, '.reviewText'))
+                EC.presence_of_element_located((By.CSS_SELECTOR, '.review-text'))
             )
             time.sleep(2)
           
             # Find and extract all reviews
-            reviews = driver.find_elements(By.CSS_SELECTOR, '.reviewText')
+            reviews = driver.find_elements(By.CSS_SELECTOR, '.review-text')
             review_texts = [review.text for review in reviews]
         
             if not review_texts:
@@ -82,6 +82,8 @@ def search_product_and_analyze_sentiment(product_name):
     finally:
         # Close the browser
         driver.quit()
+        
+product_name = input("Enter the product name you want to search for: ")
 
-# Example usage
-search_product_and_analyze_sentiment('nikon')  # Replace with the product name you want to search for
+# Call the function with the input product name
+search_product_and_analyze_sentiment(product_name)

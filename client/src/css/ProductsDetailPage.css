@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-details {
@@ -39,6 +42,42 @@
     font-size: 24px;
     font-weight: bold;
     color: #333;
+}
+
+/* Attribute section styling */
+.attributes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.attribute-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #444;
+}
+
+.attribute-item strong {
+    color: #333;
+}
+
+/* Styling for the View More button */
+.view-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
 }
 
 .reviews-section {
@@ -89,6 +128,7 @@
     padding: 20px;
 }
 
+/* Loading state */
 .loading {
     text-align: center;
     font-size: 24px;
